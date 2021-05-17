@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script src="jogo.js"></script>
+	</head>
+	
+	<body onresize="ajustaTamanhoPalcoJogo()">
+
+		<div class="painel">
+			<div class="vidas">
+
+			</div>
+			
+			<div>
+				Tempo restante: ?
+			</div>
+		</div>
+
+		<script>
+			posicaoRandomica()
+
+			setInterval(function() {
+				posicaoRandomica()
+			}, 1000)
+		</script>
+
+	</body>
+</html>
