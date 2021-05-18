@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title></title>
 
 	<link rel="stylesheet" type="text/css" href="estilo.css">
@@ -17,16 +18,16 @@
 			</div>
 			
 			<div class="cronometro">
-				Tempo restante: ?
+				Tempo restante: <span id="cronometro"></span>
 			</div>
 		</div>
 
 		<script>
-			posicaoRandomica()
+			document.getElementById('cronometro').innerHTML = tempo
 
-			setInterval(function() {
+			var criaMosquito = setInterval(function() {
 				posicaoRandomica()
-			}, 2000)
+			}, criaMosquitoTempo)
 		</script>
 
 	</body>
